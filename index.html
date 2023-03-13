@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Pólórendelés</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-5 mt-5">
+                <h1>Rendelj egyedi pólót!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 keret">
+                <div id="polo">
+                    <p id="ide"> <span id="alap"> <img src="assets/images/polo-zold.png" ></p></span>
+                    <p id="felirat">JÁNOSI</p>
+                    <p id="sorszam">19</p>
+                </div>
+            </div>
+            <div class="col-md-5 offset-md-2 keret jobb">
+                <div class="form-group">
+                    <label>Válassz színt!</label>
+                    <select id="valaszt" class="form-control" onchange="polok()">
+                        <option id="zold" value="">Zöld</option>
+                        <option id="kek" value="">Kék</option>
+                        <option id="Narancs" value="">Narancs</option>
+                        <option id="Piros" value="">Piros</option>
+                        <option id="Szürke" value="">Szürke</option>Piros
+                    </select>
+                </div>
+                <div class="form-group mt-5">
+                    <label>Felirat</label>
+                    <input type="text" class="form-control" value="JÁNOSI">
+                </div>
+                <div class="form-group mt-5">
+                    <label>Szám</label>
+                    <input type="number"class="form-control" value="19">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="main.js"></script>
